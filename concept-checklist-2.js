@@ -52,7 +52,7 @@ function pageRequirement2(books2) {
         const firstBook = 1 * pagesForBook1;
         const second10 = 2 * pagesForBook2;
         const restBook = books2 - 2;
-        const infiniteBook = restBook * pagesForBook3;
+        const infiniteBBook = restBook * pagesForBook3;
         const totalpages2 = firstBook + secondBook + infiniteBook;
         return totalpages2;
     }
@@ -60,4 +60,20 @@ function pageRequirement2(books2) {
 const pagesForBooks2 = pageRequirement(12);
 console.log('total pages is another way :', pagesForBooks2);
 //4. fucntion name --- bestFriend; ekta array er name thakbe 'friends'. ekhone ei friends der moddo theke jar name shobceye boro sheta return korte hobe.
-//5. function name --- onlyPsositive; will stop the loop if the array has any negative number and returns all the positive number before the negative number
+function oddFriends(freindsNames) {
+    for (const nam of freindsNames) {
+        if (Array.isArray(freindsNames) != true) {
+            return 'Please put a array';
+        }
+        if (nam.length % 2 != 0) {
+            return nam
+        }
+    }
+}
+var names = ['mahmodul', 'ashik', 'mimi'];
+var inputNames = oddFriends(names)
+console.log('my odd friend name is :', inputNames);
+
+//5. function name --- onlyPsositive; will stop the loop if the array has any negative number and returns all the positive number before the negative number;
+
+
